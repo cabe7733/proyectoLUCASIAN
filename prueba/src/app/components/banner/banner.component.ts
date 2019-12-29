@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-banner',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
+
+  public play = faPlay;
 
   constructor() { }
 

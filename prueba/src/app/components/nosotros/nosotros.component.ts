@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from '../services/service.service';
+import { ServiceService } from 'src/app/services/service.service';
 
 @Component({
   selector: 'app-nosotros',
@@ -8,7 +8,7 @@ import { ServiceService } from '../services/service.service';
 })
 export class NosotrosComponent implements OnInit {
 
-  constructor(private servicio:ServiceService ) { }
+  constructor(private servicio:ServiceService) { }
 
   ngOnInit() {
     this.servicio.peticion().subscribe((data) => {

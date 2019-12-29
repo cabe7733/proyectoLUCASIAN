@@ -4,13 +4,19 @@
             <mdb-card-body>
                 <mdb-card-title>
                     <h3>Titulo</h3>
+                    <h6 class="text-muted mb-2">Panel subtitle <strong class="text-primary">more Professional</strong></h6>
                 </mdb-card-title>
                 <mdb-card-text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam omnis sit error minima animi rerum commodi quasi doloremque, ea esse dicta atque impedit, expedita doloribus vitae cum ipsam maxime. Lorem ipsum dolor, sit amet consectetur adipisicing
                     elit. Esse, maxime veritatis illo cum nesciunt delectus. Repellat repudiandae aperiam autem ex, molestiae sequi! Placeat temporibus rem corporis earum debitis natus quidem.
                 </mdb-card-text>
                 <button mdbBtn class="boton">Get started</button>
-                <button mdbBtn><i class="fas fa-play green accent-2 text-success"></i>Play video</button>
+                <button mdbBtn class="z-depth-0 mt-3">
+                  <div class="boton2 green lighten-4 float-left mt-n2 mr-1">
+                    <fa-icon [icon]="play" class="text-success"></fa-icon>
+                  </div>
+                  Play video
+                </button>
             </mdb-card-body>
         </mdb-card>
     </div>

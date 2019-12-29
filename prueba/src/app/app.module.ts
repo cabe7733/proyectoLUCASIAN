@@ -3,20 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-// MDB Angular Free
-import { IconsModule } from 'angular-bootstrap-md';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { BannerComponent } from './banner/banner.component';
-import { ServiciosComponent } from './servicios/servicios.component';
-import { PlanesComponent } from './planes/planes.component';
-import { NosotrosComponent } from './nosotros/nosotros.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { PlanesComponent } from './components/planes/planes.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +32,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     HttpClientModule,
-    IconsModule,
-    AngularFontAwesomeModule
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
