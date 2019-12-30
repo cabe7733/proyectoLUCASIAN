@@ -1,1 +1,30 @@
-<p>nosotros works!</p>
+<div class="text-center mt-5">
+    <mdb-badge pill="true" class="text-center green lighten-5 text-default h6" default="true">Eventos</mdb-badge>
+    <h2 class="text-center  mt-2">Nosotros</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt hic excepturi tempora </p>
+</div>
+
+<div class="container">
+    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+        <mdb-carousel-item *ngFor="let item of slides; let in = index">
+            <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
+                <mdb-card [ngStyle]="{'backgroundImage':'url('+img2[cardIndex].img+')'}" class="card-image mb-3 mx-2">
+
+                    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste ducimus, quasi sint eos</p>
+                            <mdb-card-title class="text-white text-center">
+                                <h4>{{card.name}}</h4>
+                            </mdb-card-title>
+                            <p class="h6  text-center">{{card.username}}</p>
+                            <div>
+                                <img [src]="img[cardIndex].img" alt="" class="img-circle">
+                            </div>
+                        </div>
+                    </div>
+
+                </mdb-card>
+            </div>
+        </mdb-carousel-item>
+    </mdb-carousel>
+</div>
