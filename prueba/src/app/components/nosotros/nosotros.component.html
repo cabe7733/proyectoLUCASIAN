@@ -14,9 +14,9 @@
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste ducimus, quasi sint eos</p>
                             <mdb-card-title class="text-white text-center">
-                                <h4>{{card.name}}</h4>
+                                <h4>{{ card.name | uppercase }}</h4>
                             </mdb-card-title>
-                            <p class="h6  text-center">{{card.username}}</p>
+                            <p class="h6  text-center">{{ card.username | lowercase }}</p>
                             <div>
                                 <img [src]="img[cardIndex].img" alt="" class="img-circle">
                             </div>
